@@ -1,0 +1,18 @@
+Ask the user how many bots we want to choose from
+Returns the elected bot with a name that was taken from a name list that will be created/downloaded
+
+Each bot is given an ID to track
+
+Multiple passes are used to weed out the bots. 
+
+Each pass all bots will vote on each individual bot, Yes/No
+
+If a bot gets majority Yes, then it proceeds to the next round
+
+A bot will need to know if it has been elected yet, if it failed/passed,
+- what round it is in, how many
+
+The main program will create a list of all the bots on the first pass
+- it will deploy each bot to run against that list and collect their 
+- election request. It will take the data, and create a new list with
+- all the winning bots, and repeat the process.
